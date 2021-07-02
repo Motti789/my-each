@@ -1,11 +1,13 @@
 require 'pry'
 def my_each(array)
   i = 0
-  while array.length do |i|
-    yield 
-end
-array
-binding.pry
+  while i < array.length 
+    yield(array[i])
+    i += 1
+    #binding.pry
+  end
+  array
+
 end
 
 
